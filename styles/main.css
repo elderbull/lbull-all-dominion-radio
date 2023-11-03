@@ -125,11 +125,13 @@ p {
 .footer-img-logo {
     display: block;
     justify-content: center;
-    /* width: 600px; */
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
 }
 
 #copyright {
     text-align: center;
     font-style: italic;
+    padding-top: 1em;
 }
