@@ -1,0 +1,135 @@
+html {
+    background-color: #014076;
+    background-repeat: repeat;
+}
+
+body {
+    background-color: #F1FAEE;
+    width: 90%;
+    margin-top: 3em;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+   /* padding-top: 60px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hd_logo {
+    padding: 1em;
+    display:flex;
+    vertical-align: bottom;
+}
+
+#hd_social {
+    display:flex;
+    justify-content: right;
+    padding-top: 2em;
+    padding-right: 2em;
+}
+
+#hd_social img {
+    width: 32px;
+    height: 32px;
+    padding: 1em;
+}
+
+#nav {
+    border-top: 2px solid #e63946;
+    border-bottom: 2px solid #e63946;
+    padding-top: 3px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    text-transform: uppercase;
+}
+
+#nav_main {
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#nav_main a {
+    text-decoration: none;
+
+}
+
+#nav_main li {
+    text-transform: capitalize;
+}
+
+#content {
+    width: 1100px;
+    margin: 0 auto;
+    /* padding-left: 50px; */
+}
+
+.content-header-img {
+    display:block;
+    width: 50%;
+    height: 50%;
+    padding-top: 2em;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#content div {
+    width: 1050px;
+    padding-left: 3em;
+    padding-right: 8em;
+}
+
+p {
+    padding-left: 4em;
+}
+
+.scripture {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
+
+.scrip_emphasis {
+    color: #e63946;
+    text-transform: uppercase;
+}
+
+#scrip-ref {
+    padding-top: 4em;
+}
+
+#footer {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.footer-img-logo {
+    display: block;
+    justify-content: center;
+    /* width: 600px; */
+    margin: 0 auto;
+}
+
+#copyright {
+    text-align: center;
+    font-style: italic;
+}
