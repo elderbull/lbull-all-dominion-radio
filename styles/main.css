@@ -206,3 +206,13 @@ legend {
     display: flex;
     justify-content: center;
 }
+
+/* * * * Form Styling End * * * */
+.scrip a {
+    color:rgb(0, 4, 255);
+    text-decoration: none;
+}
+.scrip a:visited {
+    color:rgb(0, 4, 255);;
+    text-decoration: none;
+}
