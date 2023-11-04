@@ -6,6 +6,9 @@
     <title>All Dominion Radio</title>
     <link rel="stylesheet" href="styles/main.css"/>
     <link rel="icon" href="img/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,600;1,300;1,500;1,600&family=Roboto:ital,wght@0,400;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -13,16 +16,17 @@
             <img src="img/adr_header-logo.png" alt="All Dominion Radio header logo">
         </div>
         <div id="hd_social">
-            <img src="img/fb-icon.png" alt="Link to facebook page All Dominion Radio" width="32px" height="32px">
-            <img src="img/ig-icon.png" alt="Link to instagram page All Dominion Radio" width="32px" height="32px">
+            <a href="#"><img src="img/fb-icon.png" alt="Link to facebook page All Dominion Radio"></a>
+            <a href="#"><img src="img/ig-icon.png" alt="Link to instagram page All Dominion Radio"></a>
         </div>
     </div>
     <div id="nav">
         <ul id="nav_main">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li class="active-page"><a href="#">Contact Us</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="programs.html">Programs</a></li>
+            <li><a href="#" title="Coming Soon">Listen Now</a></li>
             <!-- To be added at a later date-->
             <!-- <li><a href="partners.html">Partners</a></li> -->
             <!-- <li><a href="/calendar.html">Events</a></li> -->
@@ -34,29 +38,65 @@
 
         <h1> Contact Us</h1>
 
+        <p class="form-head"> We love connecting with our listeners. Tell us how we can serve you.
+        </p>
+
         <form action="send to form url" method="post">
             <fieldset>
                 <legend> Complete the form below:</legend>
 
+                <div class="frm-field">
+                    <label class="frm-lbl" for="name">Name: </label>
+                    <br>
+                    <input type="text" id="name"/>
+                </div>
+                <div class="frm-field">
+                    <label class="frm-lbl" for="email">Email: </label>
+                    <br>
+                    <input type="email" id="email"/>
+                </div>
+                <div class="frm-field">
+                    <label class="frm-lbl" for="type">Select One: </label>
+                    <br>
+                    <select id="type" name="type">
+                        <option value="general">General Questions / Comments</option>
+                        <option value="mailinglist-remove">Mailing List - Remove</option>
+                        <option value="financial-support">Donations / Online Giving</option>
+                        <option value="technical-issues">Technical -- Stations, Reception, Website</option>
+                        <option value="partner">I'm interested in broadcasting my pre-recorder service</option>
+                        <option value="artist-inq">I'm interested in having my music played on All Dominion Radio </option>
+                    </select>
+                </div>
+                <div class="frm-field">
+                    <label class="frm-lbl" for="comments">Comments: </label>
+                    <br>
+                    <textarea id="comments" name="comments" rows="5" cols="33"> </textarea>
+                </div>
+                <div class="frm-field">
+                    <input type="checkbox" id="newsletter"/>
+                    <label class="frm-lbl newsletter" for="newsletter">Sign me up to receive news and notifications from All Dominion Radio.</label>
+                </div>
+
+                <div id="frm-sub-bttn">
+                    <button type="submit" name="submit">
+                        Submit
+                    </button>
+                </div>
 
 
 
             </fieldset>
         </form>
-
     </div>
 
-    <div id="script_ref">
+    <div id="scrip-ref" class="scripture">
         <script src="http://www.verse-a-day.com/js/NKJV04.js"></script>
-
     </div>
-
-
 
     <div id="footer">
-        <img src="img/adr_logo_world.png" width="50px" height="50px"/>
+        <img class="footer-img-logo" src="img/adr_logo_world.png"/>
         <div id="copyright">
-            All Rights reservered by Strait and Narrow Ministries Inc 2023
+            All Rights reservered by Strait and Narrow Ministries INC &copy;2023
         </div>
     </div>
 
